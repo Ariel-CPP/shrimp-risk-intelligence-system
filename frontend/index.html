@@ -6,13 +6,31 @@
 </head>
 <body>
 
-<h1>🦐 Shrimp Risk Intelligence System</h1>
+<div class="container">
 
-<input type="file" id="fileInput">
-<button onclick="uploadFile()">Predict</button>
+    <h1>🦐 Shrimp Risk Intelligence System</h1>
+    <p>Upload water quality dataset → Predict risk</p>
 
-<h2>Results</h2>
-<pre id="output"></pre>
+    <!-- Upload Section -->
+    <div class="card">
+        <h3>📂 Upload CSV</h3>
+        <input type="file" id="fileInput" accept=".csv">
+        <button onclick="uploadFile()">Run Prediction</button>
+    </div>
+
+    <!-- Preview -->
+    <div class="card">
+        <h3>📊 Data Preview</h3>
+        <table id="previewTable"></table>
+    </div>
+
+    <!-- Results -->
+    <div class="card">
+        <h3>📈 Prediction Results</h3>
+        <table id="resultTable"></table>
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
